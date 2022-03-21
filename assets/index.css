@@ -109,4 +109,63 @@ a:hover::after {
 .src input:hover {
   background-color: rgba(128, 128, 128, 0.3);
 }
+
+.carouselone {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: calc(80%);
+  -webkit-transform: translate(13%, 5%);
+          transform: translate(13%, 5%);
+  background-color: bisque;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  padding: 0em 1.5em 0em 1.5em;
+}
+
+.cardone:hover, .cardtu:hover, .cardthri:hover, .cardfor:hover, .cardsone:hover, .cardstu:hover, .cardsthri:hover, .cardsfor:hover, .cardsfiv:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s cubic-bezier(0.165, 2.84, 0.44, 1);
+  transition: all 0.5s cubic-bezier(0.165, 2.84, 0.44, 1);
+}
+
+.card img, .owl-carousel img {
+  border-radius: 1em;
+}
+
+.carouselone h2, .carouseltu h2 {
+  text-align: center;
+  background-color: #13c45c;
+  color: aliceblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.owl-carousel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+  padding: 0em 1.5em 0em 1.5em;
+  cursor: pointer;
+}
+
+.carouseltu {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: calc(95%);
+  -webkit-transform: translate(3%, 5%);
+          transform: translate(3%, 5%);
+  background-color: bisque;
+}
+
+.carouseltu img {
+  height: 50%;
+}
 /*# sourceMappingURL=index.css.map */

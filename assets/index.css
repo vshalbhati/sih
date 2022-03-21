@@ -1,0 +1,112 @@
+.top {
+  background-color: black;
+  height: 0.3em;
+  width: 2em;
+  margin: 0.22m;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.middle {
+  background-color: black;
+  height: 0.3em;
+  width: 2em;
+  margin: 3px;
+}
+
+.bottom {
+  background-color: black;
+  height: 0.3em;
+  width: 2em;
+  margin: 3px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#ham {
+  display: inline-block;
+  background-color: gray;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 4px;
+}
+
+.bottom_ham {
+  background-color: black;
+  height: 0.3em;
+  width: 2em;
+  margin: 3px;
+  -webkit-transform: rotate(-45deg) translate(5 0.3em, -0.3em);
+          transform: rotate(-45deg) translate(5 0.3em, -0.3em);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.top_ham {
+  background-color: black;
+  height: 0.3em;
+  width: 2em;
+  margin: 3px;
+  -webkit-transform: rotate(45deg) translate(5 0.3em, 0.3em);
+          transform: rotate(45deg) translate(5 0.3em, 0.3em);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.txt {
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 85% 15%;
+      grid-template-columns: 85% 15%;
+}
+
+.navbar {
+  float: right;
+}
+
+.navbar a {
+  position: relative;
+  padding: 0.1em 0.4em 0.1em 0.4em;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 2em;
+  width: calc(100% + 0.1em);
+  background-color: rgba(128, 128, 128, 0.5);
+  z-index: -1;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  border-radius: 0.6em;
+}
+
+a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.84, 0.04, 0, 1.07);
+  transition: -webkit-transform 0.8s cubic-bezier(0.84, 0.04, 0, 1.07);
+  transition: transform 0.8s cubic-bezier(0.84, 0.04, 0, 1.07);
+  transition: transform 0.8s cubic-bezier(0.84, 0.04, 0, 1.07), -webkit-transform 0.8s cubic-bezier(0.84, 0.04, 0, 1.07);
+}
+
+.src input {
+  border-radius: 0.6em;
+}
+
+.src input:hover {
+  background-color: rgba(128, 128, 128, 0.3);
+}
+/*# sourceMappingURL=index.css.map */
